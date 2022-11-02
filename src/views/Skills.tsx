@@ -29,7 +29,7 @@ export default function Skills({ skills }: Props) {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
   return (
-    <section id="Skills" className="relative mt-28 max-w-full md:mt-48">
+    <section id="Skills" className="mt-28 max-w-full md:mt-48">
       <div ref={ref}>
         <div
           id="Skills"
@@ -44,7 +44,7 @@ export default function Skills({ skills }: Props) {
             <CircleGrid color="#374151" size="175px" zIndex={2} />
           ) : null}
         </div>
-        <div className="flex items-center justify-center">
+        <div className="mx-8 flex items-center justify-center">
           <div className="grid grid-cols-8 gap-4">
             {skills.map((skill: Skills, i: number) => (
               <Image

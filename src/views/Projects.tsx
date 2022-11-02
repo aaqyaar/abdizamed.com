@@ -22,7 +22,7 @@ export default function Projects({ projects }: Props) {
         id="content"
         className="mb-16 flex flex-col items-center justify-center pt-16"
       >
-        <h1 className="mb-4 inline rounded border-b-4  border-gray-700 font-montserrat text-4xl font-semibold tracking-widest text-gray-100">
+        <h1 className="mb-4 inline rounded border-b-4  border-gray-700 font-montserrat text-3xl font-semibold tracking-widest  text-gray-100 lg:text-4xl">
           My Recent Projects
         </h1>
         <p className=" text-center font-poppins text-sm tracking-wider text-gray-100 md:w-1/2 md:text-xl">
