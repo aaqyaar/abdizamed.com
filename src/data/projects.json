@@ -1,0 +1,94 @@
+[
+  {
+    "id": "P001",
+    "name": "E-commerce website",
+    "description": "E-commerce website with shopping cart and payment gateway integration (EVC, E-DAHAB,etc.) and product management system. ",
+    "features": [
+      {
+        "id": "F001",
+        "name": "Product catalog",
+        "description": "Product catalog",
+        "features": [
+          {
+            "id": "F002",
+            "name": "Get List of Products, Filtering",
+            "description": "get list of products by pagination and search filtering",
+            "features": [
+              {
+                "id": "F003",
+                "name": "product search by category",
+                "description": "product search by category",
+                "features": []
+              },
+              {
+                "id": "F004",
+                "name": "product filter by name",
+                "description": "product filter by name",
+                "features": []
+              }
+            ]
+          },
+          {
+            "id": "F005",
+            "name": "Product details",
+            "description": "Product details",
+            "features": []
+          }
+        ]
+      },
+      {
+        "id": "F006",
+        "name": "Shopping cart",
+        "description": "Shopping cart",
+        "features": [
+          {
+            "id": "F007",
+            "name": "Add product to cart",
+            "description": "Add product to cart",
+            "features": []
+          },
+          {
+            "id": "F008",
+            "name": "Remove product from cart",
+            "description": "Remove product from cart",
+            "features": []
+          },
+          {
+            "id": "F009",
+            "name": "Update product quantity in cart",
+            "description": "Update product quantity in cart",
+            "features": []
+          }
+        ]
+      },
+      {
+        "id": "F010",
+        "name": "Checkout",
+        "description": "Checkout",
+        "features": [
+          {
+            "id": "F011",
+            "name": "Checkout as guest",
+            "description": "Checkout as guest",
+            "features": []
+          },
+          {
+            "id": "F012",
+            "name": "Checkout as registered user",
+            "description": "Checkout as registered user",
+            "features": []
+          }
+        ]
+      }
+    ],
+    "techs": [
+      "https://skillicons.dev/icons?i=react",
+      "https://skillicons.dev/icons?i=redux",
+      "https://skillicons.dev/icons?i=javascript",
+      "https://skillicons.dev/icons?i=mui",
+      "https://skillicons.dev/icons?i=nodejs",
+      "https://skillicons.dev/icons?i=express",
+      "https://skillicons.dev/icons?i=mongodb"
+    ]
+  }
+]
