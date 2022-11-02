@@ -32,18 +32,24 @@ export const emailTemplate = (data: ValuesType) => {
   background-color: #f9fafb;
   border-radius: 10px;
   padding: 20px;
-  font-family: 'Droid Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   "
   >
   <h2 class="title" style="text-align: center; font-size:20px;">Hi, Abdi Zamed</h2>
   <hr />
-  <h4 style="font-size:12.5px;">Client Full Name :-  ${data.firstName} ${data.lastName},</h4>
-  <p style="margin:20px 0 20px 0; font-size:12.5px">
-  <span style="font-weight:bold;">Client Message</span> :- ${data.message}                  
-  </p>
-  
-  
-  <h4 style="font-size:12.5px;">Client Phone Number :-  ${data.phone}</h4>
+
+  <div class="content" style="margin-top: 20px;">
+    <p style="font-size: 16px; margin-bottom: 10px;">
+      You have a new message from <b>${data.firstName} ${data.lastName}</b> with email <b>${data.email}</b>
+    </p>
+    <p style="font-size: 16px; margin-bottom: 10px;">
+      Message: <b>${data.message}</b>
+      <br />
+      Phone: <b>${data.phone}</b>
+    </p>
+
+
+  </div>
   
   <p class="footer" style="font-size: small; font-style: italic; padding-top:10px;">
   <span>Thank you,</span> <br />
