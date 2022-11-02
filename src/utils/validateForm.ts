@@ -3,7 +3,7 @@ export type values = {
   lastName?: string;
   email?: string;
   phone?: string;
-  message?: string;
+  message?: string | any;
 };
 
 function validateEmail(email: string) {
@@ -21,7 +21,11 @@ export const validateForm = (values: values) => {
     errors.email = "Email is not valid";
   }
   if (!values?.phone) errors.phone = "Phone is required";
-  if (!values?.message) errors.message = "Message is required";
+  if (!values?.message) {
+    errors.message = "Message is required";
+  } else if (!(values.message.length > 50) || !(values.message.length <= 500)) {
+    errors.message = "Message must be between 50 and 500 characters";
+  }
 
   if (Object.keys(errors).length === 0) {
     return { isValid: true, errors };

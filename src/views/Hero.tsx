@@ -40,9 +40,9 @@ export default function Hero() {
           <div className="mb-4 flex justify-center md:mx-1 md:justify-start">
             <a
               href="https://github.com/abdi-aaqyaar"
-              className=" md:text-md flex items-center gap-3 rounded border-2 border-gray-800 bg-gray-800 px-2 py-2 font-bold text-white transition  hover:-translate-y-2 hover:bg-white hover:text-black hover:shadow-md lg:px-3 lg:py-5 lg:text-2xl"
+              className=" md:text-md flex items-center gap-3 rounded border-2 border-gray-800 bg-gray-800 px-2 py-2 font-bold text-white transition  hover:-translate-y-2 hover:bg-white hover:text-black hover:shadow-md lg:px-3 lg:py-5 lg:text-xl"
             >
-              <FaGithub className="h-4 w-4 md:h-8 md:w-8" />
+              <FaGithub className="h-4 w-4 md:h-6 md:w-6" />
               Connect on Github
             </a>
           </div>

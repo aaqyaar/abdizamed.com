@@ -20,6 +20,7 @@ export default function Contact() {
     phone: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
   const [values, setValues] = useState<ValuesType>({
     firstName: "",
     lastName: "",
@@ -43,9 +44,10 @@ export default function Contact() {
 
   const onSubmit = async (e: any) => {
     e.preventDefault();
-    e.stopPropagation();
+    // e.stopPropagation();
     const { isValid, errors } = validateForm(values);
     if (isValid) {
+      setLoading(true);
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: {
@@ -65,6 +67,7 @@ export default function Contact() {
       } else {
         toast.error("Something went wrong.");
       }
+      setLoading(false);
     }
     setFormErrors(errors);
   };
@@ -215,20 +218,30 @@ export default function Contact() {
                       onChange={handleChange}
                       onBlur={handleBlur}
                       value={values.message}
-                    ></textarea>
+                      minLength={50}
+                      maxLength={500}
+                    />
 
                     {formErrors.message && (
                       <span className="mt-2 text-red-500">
                         {formErrors.message && formErrors.message}
                       </span>
                     )}
+                    <span className="flex justify-end py-2 text-gray-600">
+                      {values.message?.length || 0}, 500
+                    </span>
                   </div>
                 </div>
                 <div className="text-right sm:col-span-2">
                   <input
                     type="submit"
-                    className="cursor-pointer rounded-md bg-slate-800 px-4 py-3 text-sm text-white transition hover:-translate-y-2 hover:bg-gray-800 md:px-5 md:py-4 md:text-lg"
+                    className={`${
+                      loading || values.message?.length < 50
+                        ? ""
+                        : "cursor-pointer"
+                    } rounded-md bg-slate-800 px-4 py-3 text-sm text-white transition hover:-translate-y-2 hover:bg-gray-800 md:px-5 md:py-4 md:text-lg`}
                     value="Submit"
+                    disabled={loading || values.message?.length < 50}
                   />
                 </div>
               </form>
