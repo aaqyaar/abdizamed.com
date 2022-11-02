@@ -135,7 +135,7 @@ export default function Contact() {
             </div>
             <div className="py-10 px-6 shadow-lg shadow-slate-200 sm:px-10 lg:col-span-2">
               <h3 className="font-poppins text-2xl font-medium text-gray-900">
-                Send me a message 👋
+                Send me message 👋
               </h3>
 
               <form

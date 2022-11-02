@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 import type { MetaTypes } from "types/meta.types";
 
@@ -25,6 +26,9 @@ export default function Meta({
 
   return (
     <>
+      <Head>
+        <title>Abdi Zamed | Personal Website</title>
+      </Head>
       <meta charSet="utf-8" />
       <meta
         name="viewport"
