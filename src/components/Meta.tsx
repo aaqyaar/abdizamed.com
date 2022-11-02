@@ -49,7 +49,7 @@ export default function Meta({
 
       <meta property="og:description" content={meta.description} />
       <meta property="og:image" content={meta.image} />
-      <meta property="og:url" content="https://abdi-zamed.vercel.app/" />
+      <meta property="og:url" content="https://abdizamed.vercel.app/" />
       <meta property="og:site_name" content="Abdi Zamed" />
       <meta property="og:locale" content="en_US" />
       <meta name="twitter:card" content="summary_large_image" />
@@ -59,7 +59,7 @@ export default function Meta({
       <meta name="twitter:description" content={meta.description} />
       <meta name="twitter:image" content={meta.image} />
       <meta name="twitter:image:alt" content={meta.title} />
-      <meta name="twitter:domain" content="https://abdi-zamed.vercel.app/" />
+      <meta name="twitter:domain" content="https://abdizamed.vercel.app/" />
 
       <meta name="rating" content="General" />
       <meta name="distribution" content="Global" />
